@@ -126,6 +126,7 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\Var_off.txt" />
+    <None Include="Resources\test.wav" />
     <Content Include="Sounoft.ico" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />

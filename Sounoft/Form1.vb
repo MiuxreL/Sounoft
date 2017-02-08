@@ -31,7 +31,7 @@ Public Class Form1
     Private Sub MaterialRaisedButton1_Click(sender As Object, e As EventArgs) Handles MaterialRaisedButton1.Click
         Try
             Dim Loadm As String() = My.Settings.VarBut.Split("-SOUNOFT-")
-            My.Computer.Audio.Play("‪C:\Users\MiuxreL\Documents\MEGA\Sounoft\Sontest\test.wav")
+            My.Computer.Audio.Play(My.Resources.test)
         Catch ex As Exception
             Dim Loadm As String() = My.Settings.VarBut.Split("-SOUNOFT-")
             MsgBox(ex.Message & vbNewLine & Loadm(1))
