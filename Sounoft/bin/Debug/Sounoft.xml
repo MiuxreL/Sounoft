@@ -22,5 +22,10 @@ Sounoft
   les recherches de ressources à l'aide de cette classe de ressource fortement typée.
 </summary>
 </member>
+<member name="P:Sounoft.My.Resources.Resources.test">
+<summary>
+  Recherche une ressource localisée de type System.IO.UnmanagedMemoryStream semblable à System.IO.MemoryStream.
+</summary>
+</member>
 </members>
 </doc>

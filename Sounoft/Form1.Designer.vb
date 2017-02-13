@@ -57,7 +57,7 @@ Partial Class Form1
         Me.MaterialContextMenuStrip1.Items.AddRange(New System.Windows.Forms.ToolStripItem() {Me.SélectionnerUnNomToolStripMenuItem, Me.ToolStripSeparator1, Me.ChangerDeNomToolStripMenuItem, Me.ToolStripSeparator2, Me.LireLaudioToolStripMenuItem})
         Me.MaterialContextMenuStrip1.MouseState = MaterialSkin.MouseState.HOVER
         Me.MaterialContextMenuStrip1.Name = "MaterialContextMenuStrip1"
-        Me.MaterialContextMenuStrip1.Size = New System.Drawing.Size(193, 82)
+        Me.MaterialContextMenuStrip1.Size = New System.Drawing.Size(193, 104)
         '
         'SélectionnerUnNomToolStripMenuItem
         '
@@ -81,7 +81,7 @@ Partial Class Form1
         '
         Me.ToolStripTextBox1.Name = "ToolStripTextBox1"
         Me.ToolStripTextBox1.Size = New System.Drawing.Size(100, 23)
-        Me.ToolStripTextBox1.Text = "BUT_0"
+        Me.ToolStripTextBox1.Text = "Faites un clique droit sur ce boutton"
         '
         'ToolStripSeparator2
         '

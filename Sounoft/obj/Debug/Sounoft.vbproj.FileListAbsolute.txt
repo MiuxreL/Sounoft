@@ -11,3 +11,4 @@ C:\Users\MiuxreL\Documents\MEGA\Sounoft\Sounoft\obj\Debug\Sounoft.vbproj.Generat
 C:\Users\MiuxreL\Documents\MEGA\Sounoft\Sounoft\obj\Debug\Sounoft.exe
 C:\Users\MiuxreL\Documents\MEGA\Sounoft\Sounoft\obj\Debug\Sounoft.xml
 C:\Users\MiuxreL\Documents\MEGA\Sounoft\Sounoft\obj\Debug\Sounoft.pdb
+C:\Users\MiuxreL\Documents\MEGA\Sounoft\Sounoft\obj\Debug\Sounoft.vbprojResolveAssemblyReference.cache

@@ -19,23 +19,41 @@ Public Class Form1
         If OSD.ShowDialog = DialogResult.OK Then
             Dim Change As String() = My.Settings.VarBut.Split("-SOUNOFT-")
             My.Settings.VarBut = My.Settings.VarBut.Replace(Change(1), OSD.FileName)
-            MsgBox(My.Settings.VarBut)
         End If
     End Sub
 
     Sub dem()
-        Dim Gene As String() = My.Settings.VarBut.Split("-SOUNOFT-")
-        MaterialRaisedButton1.Text = Gene(2)
+        Dim Loadm As String() = My.Settings.VarBut.Split("-SOUNOFT-")
+        ToolStripTextBox1.Text = Loadm(2)
+        MaterialRaisedButton1.Text = Loadm(2)
     End Sub
 
     Private Sub MaterialRaisedButton1_Click(sender As Object, e As EventArgs) Handles MaterialRaisedButton1.Click
         Try
             Dim Loadm As String() = My.Settings.VarBut.Split("-SOUNOFT-")
-            My.Computer.Audio.Play(My.Resources.test)
+            Dim son = New System.Media.SoundPlayer(Loadm(1))
+            son.Play()
         Catch ex As Exception
             Dim Loadm As String() = My.Settings.VarBut.Split("-SOUNOFT-")
-            MsgBox(ex.Message & vbNewLine & Loadm(1))
+            MsgBox(ex.Message)
         End Try
 
+    End Sub
+
+    Private Sub ToolStripTextBox1_KeyDown(sender As Object, e As KeyEventArgs) Handles ToolStripTextBox1.KeyUp
+        Dim Loadm As String() = My.Settings.VarBut.Split("-SOUNOFT-")
+        My.Settings.VarBut = My.Settings.VarBut.Replace(Loadm(2), ToolStripTextBox1.Text)
+        MaterialRaisedButton1.Text = Loadm(2)
+    End Sub
+
+    Private Sub LireLaudioToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles LireLaudioToolStripMenuItem.Click
+        Try
+            Dim Loadm As String() = My.Settings.VarBut.Split("-SOUNOFT-")
+            Dim son = New System.Media.SoundPlayer(Loadm(1))
+            son.Play()
+        Catch ex As Exception
+            Dim Loadm As String() = My.Settings.VarBut.Split("-SOUNOFT-")
+            MsgBox(ex.Message)
+        End Try
     End Sub
 End Class
